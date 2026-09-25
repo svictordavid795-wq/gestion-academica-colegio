@@ -6,7 +6,7 @@ Aceptada
 
 ## Fecha
 
-2026-09-25
+2026-09-19
 
 ## Contexto
 
