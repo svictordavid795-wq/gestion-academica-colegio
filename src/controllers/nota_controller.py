@@ -33,3 +33,34 @@ def crear_nota():
     db.session.commit()
 
     return jsonify({"mensaje": "Nota creada correctamente"})
+
+
+
+def actualizar_nota(id):
+    nota = Nota.query.get(id)
+
+    if not nota:
+        return jsonify({"mensaje": "Nota no encontrada"}), 404
+
+    datos = request.get_json()
+
+    nota.estudiante = datos["estudiante"]
+    nota.asignatura = datos["asignatura"]
+    nota.periodo = datos["periodo"]
+    nota.calificacion = datos["calificacion"]
+
+    db.session.commit()
+
+    return jsonify({"mensaje": "Nota actualizada correctamente"})
+
+
+def eliminar_nota(id):
+    nota = Nota.query.get(id)
+
+    if not nota:
+        return jsonify({"mensaje": "Nota no encontrada"}), 404
+
+    db.session.delete(nota)
+    db.session.commit()
+
+    return jsonify({"mensaje": "Nota eliminada correctamente"})
