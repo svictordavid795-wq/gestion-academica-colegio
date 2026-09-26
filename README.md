@@ -1,17 +1,24 @@
 # Sistema de Gestión Académica
 
-Proyecto desarrollado para la asignatura Arquitectura de Software.
+## Descripción
 
-## Objetivo
-
-Permitir la gestión de notas y asistencia de estudiantes mediante una plataforma web centralizada, eliminando los problemas de concurrencia ocasionados por archivos Excel compartidos.
+Sistema para la gestión de notas académicas utilizando Flask y SQLite.
 
 ## Tecnologías
 
 - Python
 - Flask
-- PostgreSQL
+- SQLAlchemy
+- SQLite
 - GitHub
+
+## Instalación
+
+pip install -r requirements.txt
+
+## Ejecución
+
+python src/app.py
 
 ## Autor
 
