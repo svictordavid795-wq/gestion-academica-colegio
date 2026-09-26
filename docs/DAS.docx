@@ -1,11 +1,14 @@
 1.1 Visión general del negocio y alcance
 Problema de negocio
 
-La institución educativa administra actualmente las notas y asistencias mediante archivos Excel compartidos en una carpeta de red. Cuando varios docentes modifican simultáneamente el mismo archivo, se producen conflictos de concurrencia que ocasionan pérdida de información académica y afectan la confiabilidad de los registros estudiantiles.
+La institución educativa administra actualmente las notas y asistencias mediante archivos Excel compartidos en una carpeta de red.
+Cuando varios docentes modifican simultáneamente el mismo archivo, se producen conflictos de concurrencia que ocasionan pérdida de información
+académica y afectan la confiabilidad de los registros estudiantiles.
 
 Propuesta de solución
 
-El sistema permite a los docentes registrar, actualizar y consultar notas mediante una plataforma web centralizada que evita la pérdida de información y garantiza la integridad de los datos académicos.
+El sistema permite a los docentes registrar, actualizar y consultar notas mediante una plataforma web centralizada que evita la pérdida
+de información y garantiza la integridad de los datos académicos.
 
 Alcance
 Gestión de estudiantes.
