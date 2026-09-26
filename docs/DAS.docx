@@ -15,73 +15,62 @@ Consulta de notas.
 Actualización de notas.
 Eliminación de notas.
 Control de acceso.
+
 Fuera de alcance
 Matrículas.
 Pagos.
 Facturación.
 Aplicación móvil.
 Integraciones externas.
+
+
 1.2 Historias de Usuario
 HU-01
-
 Como docente quiero registrar calificaciones para mantener actualizada la información académica de los estudiantes.
 
-Significancia Arquitectónica
-
+Significancia Arquitectónica:
 Ejercita persistencia, base de datos y lógica de negocio.
 
 HU-02
 
 Como docente quiero consultar las notas registradas para verificar el desempeño académico de los estudiantes.
 
-Significancia Arquitectónica
-
+Significancia Arquitectónica:
 Ejercita consultas y acceso a datos.
 
 HU-03
-
 Como docente quiero actualizar una nota registrada para corregir errores en la calificación.
 
-Significancia Arquitectónica
-
+Significancia Arquitectónica:
 Ejercita actualización de datos y persistencia.
 
 1.3 Atributos de Calidad
 AC-01 Seguridad
 Escenario
+Un usuario intenta acceder a funciones restringidas sin autorización
 
-Usuario intenta acceder a las funciones sin permisos.
-
-Métrica
-
+Métrica:
 100% de accesos no autorizados deben ser rechazados.
 
-Verificación
-
+Verificación:
 Pruebas funcionales.
 
 AC-02 Confiabilidad
 Escenario
+Dos docentes registran información académica simultáneamente.
 
-Dos docentes registran notas simultáneamente.
-
-Métrica
-
+Métrica:
 0% de pérdida de información.
 
-Verificación
-
+Verificación:
 Pruebas sobre la base de datos.
 
 AC-03 Mantenibilidad
 Escenario
+Un desarrollador agrega un nuevo atributo a la entidad principal.
 
-Un desarrollador debe agregar un nuevo campo al modelo Nota.
-
-Métrica
-
+Métrica:
 El cambio debe afectar máximo tres archivos.
 
 Verificación
-
 Revisión de código.
